@@ -1,0 +1,13 @@
+<!--pages/tabs-view/index.wxml-->
+<!-- Tab标签 -->
+<view class="tabs">
+  <view wx:for="{{tabs}}" class="li {{index==tabID ? 'on' : ''}}" data-swid="{{index}}" bindtap="menuSwitch"><view class="{{item.icon}}">{{item.name}}</view></view>
+</view>
+<view class="tabh"></view>
+<!-- Tab切换 -->
+<swiper current="{{tabID}}" duration="200" class="swiper-box" style="z-index:1;height:{{winHeight}}px;" bindchange="bindChange">
+  <swiper-item > 首页 </swiper-item>
+<swiper-item > 攻略库 </swiper-item>
+<swiper-item > 我的 </swiper-item>
+</swiper>
+

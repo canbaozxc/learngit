@@ -1,0 +1,92 @@
+/**index.wxss**/
+.content-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+.banner{ 
+  width: 750rpx;
+  height: 254rpx;
+}
+.banner image{
+  width: 100%;
+  height: 100%;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.userinfo-avatar {
+  width: 180rpx;
+  height: 180rpx;
+  border: 1px solid #FDE518;
+  margin-top: -100rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  line-height: 90rpx;
+  font-size: 26rpx;
+  font-weight: 600;
+  color:#FDE518;
+}
+.log{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+.log_txt{
+  color: #FFF;
+  font-size: 24rpx;
+  padding-bottom: 70rpx;
+}
+.log_info{
+  height: 166rpx;
+  position: relative;
+  width: 692rpx;
+  margin: 34rpx 0;
+  border: 1rpx solid #182A38;
+  background: url("https://share.ftabt.cn/KingAnswer/Public/img/user/m-line.png") no-repeat center center;
+  background-size: 2rpx 166rpx;
+}
+.log_li{
+   width: 640rpx;
+  height: 114rpx;
+  padding-top: 26rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  flex-direction:row;
+}
+
+.diex{
+  flex:1;color:#777;font-size:24rpx;text-align:center;
+}
+.share{
+  width: 690rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin-bottom: 60rpx;
+}
+.me_info{
+  position: relative;
+  width: 692rpx;
+  margin: 34rpx 0;
+  border: 1rpx solid #182A38;
+ padding-bottom: 26rpx;
+}
+.mInfo_img{width: 312rpx; height: 66rpx; margin-top: -33rpx; padding-bottom:44rpx; }
+
+/*奖品*/
+.me_Li{ width: 636rpx; height: 208rpx; margin-bottom: 20rpx; 
+background-size:636rpx 208rpx; }

@@ -1,0 +1,83 @@
+<!--index.wxml-->
+<view class='page'>
+  <!--页面banner-->
+  <view class='banner'>
+  <image  mode="widthFix" src='https://share.ftabt.cn/KingAnswer/Public/img/index/top-pic.png'></image>
+  </view>
+  <!--内容主体-->
+  <view class='home'>
+    <view class='content-title'>
+      <image class='recruit' mode="widthFix" bindtap='bindViewPlay' src='../../img/index/recruit-button.png'></image>
+      <view class='partake'>当前有<text>234</text>人闯关</view>
+      <view class='share'>
+        <text>分享群（复活卡+1）</text>
+      </view>
+      <!-- Tab标签-->
+      <view class="tabs">
+        <view wx:for="{{tabs}}" class="li {{index==tabID ? 'on' : ''}}" data-swid="{{index}}" bindtap="menuSwitch">
+          <!--<image class='btn' src='{{item.url}}'></image>-->
+          <view class='btn {{item.icon}}'></view>
+        </view>
+      </view>
+    </view>
+    <view class='content-body'>
+        <!-- Tab切换 -->
+        <swiper current="{{tabID}}" duration="200" class="swiper-box"  bindchange="bindChange" style='height:1180rpx;'>
+          <swiper-item class="item-rank"> 
+            <view class="panel rank">
+              <view class='lt_ice'></view>
+              <view class='rt_ice'></view>
+              <view class='lb_ice'></view>
+              <view class='rb_ice'></view>
+              排行榜
+            </view>
+          </swiper-item> 
+          <swiper-item class="item-reward" > 
+            <view class="panel reward">
+              <view class='lt_ice'></view>
+              <view class='rt_ice'></view>
+              <view class='lb_ice'></view>
+              <view class='rb_ice'></view>
+              <view class='panel-con'>
+                <view class='re_li panel'>
+                  <image class='rLi_img' src='https://share.ftabt.cn/KingAnswer/Public/img/index/msy-pic.png' mode="widthFix"></image>
+                  <view class='rLi_text'>
+                    <view class='h1'>王者荣耀皮肤</view>
+                    <view class='p'>占星术士 隐世明</view>
+                  </view>
+                </view>
+                <view class='re_li panel'>
+                  <image class='rLi_img' src='https://share.ftabt.cn/KingAnswer/Public/img/index/gsl-pic.png' mode="widthFix"></image>
+                  <view class='rLi_text'>
+                    <view class='h1'>王者荣耀皮肤</view>
+                    <view class='p'>幻舞玲珑 公孙离</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+           </swiper-item>
+          <swiper-item class="item-gift" >
+            <view class='panel gift'>
+              <view class='lt_ice'></view>
+              <view class='rt_ice'></view>
+              <view class='lb_ice'></view>
+              <view class='rb_ice'></view>
+              
+              <view class='panel-con'>
+                <view class="gi_li panel">
+                  <image class='gLi_img' src='https://share.ftabt.cn/KingAnswer/Public/img/index/jnk-pic.png'  mode="widthFix"></image>
+                  <view class='gLi_btn btn_receive'><text>立即领取</text></view>
+                </view>
+                <view class="gi_li panel">
+                  <image class='gLi_img' src='https://share.ftabt.cn/KingAnswer/Public/img/index/srf-pic.png'  mode="widthFix"></image>
+                  <view class='gLi_btn btn_receive'><text>立即领取</text></view>
+                </view>
+              </view>
+            </view>
+           </swiper-item>
+        </swiper>
+    </view>
+    <view class='content-bottom'></view>
+  </view>
+</view>
+

@@ -1,0 +1,64 @@
+/**app.wxss**/
+.page{
+  font-family: "微软雅黑";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.home{
+  width: 100%;
+  background-color: #0D1A23;
+}
+/*public*/
+.panel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.panel-con{
+  width: 636rpx;
+  padding-top: 30rpx;
+}
+.h1{ font-size: 32rpx; font-weight: 600;}
+.p{ font-size: 26rpx; font-weight: 500;}
+.text_center{text-align: center;}
+.btn_receive{
+   background-color: #Da5939;
+   border-radius: 44rpx;
+   font-size: 28rpx;
+   font-weight: 600;
+   color: #FFF;
+   text-align: center;
+}
+.lt_ice{ background: url("https://share.ftabt.cn/KingAnswer/Public/img/index/mainbg-l1.png") no-repeat;
+background-position: 0rpx 0rpx;
+background-size: 26rpx; 
+position: absolute;
+left: 0; top: 0;
+width: 26rpx;
+height: 26rpx;}
+.rt_ice{ background: url("https://share.ftabt.cn/KingAnswer/Public/img/index/mainbg-r1.png") no-repeat;
+background-position: 0rpx 0rpx;
+background-size: 26rpx;
+position: absolute;
+right: 0; top: 0;
+width: 26rpx;
+height: 26rpx;}
+.lb_ice{ background: url("https://share.ftabt.cn/KingAnswer/Public/img/index/mainbg-l2.png") no-repeat; 
+background-position: 0rpx 0rpx;
+background-size: 26rpx;
+position: absolute;
+left: 0; bottom: 0;
+width: 26rpx;
+height: 26rpx;}
+
+.rb_ice{ background: url("https://share.ftabt.cn/KingAnswer/Public/img/index/mainbg-r2.png") no-repeat; 
+background-position: 0rpx 0rpx;
+background-size: 26rpx; position: absolute;
+right: 0; bottom: 0;
+width: 26rpx;
+height: 26rpx;}

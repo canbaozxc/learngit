@@ -1,0 +1,65 @@
+<!--index.wxml-->
+<view class='page'>
+  <!--页面banner-->
+  <view class='banner'>
+  <image  mode="widthFix" src='https://share.ftabt.cn/KingAnswer/Public/img/user/me top-pic.png'></image>
+  </view>
+  <!--内容主体-->
+  <view class='home'>
+    <view class='content-title'></view>
+    <view class='content-body'>
+      <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <block wx:else>
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+      </view>
+      <view class='p text_center log_txt'>
+        最高挑战<text>11</text>关，排名<text>2332</text>
+      </view>
+      <view class='log'>
+        <view class='panel log_info'>
+          <view class='lt_ice'></view>
+          <view class='rt_ice'></view>
+          <view class='lb_ice'></view>
+          <view class='rb_ice'></view>
+          <view class='log_li'>
+            <view class='diex'>
+              <text><text>5次</text>\n已挑战</text>
+            </view>
+            <view class='diex'>
+               <text><text>3张</text>\n复活卡</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='btn_receive share'>
+        邀请好友获得领取机会
+      </view>
+      <view class='me'>
+        <view class='panel me_info'>
+          <view class='lt_ice'></view>
+          <view class='rt_ice'></view>
+          <view class='lb_ice'></view>
+          <view class='rb_ice'></view>
+          <image class='mInfo_img' mode="widthFix" src='https://share.ftabt.cn/KingAnswer/Public/img/user/reward-box.png'></image>
+          <view class='me_Li' style='background-image:url("https://share.ftabt.cn/KingAnswer/Public/img/index/jnk-pic.png")'>
+
+          </view>
+           <view class='me_Li' style='background-image:url("https://share.ftabt.cn/KingAnswer/Public/img/index/srf-pic.png")'>
+            
+          </view>
+           <view class='me_Li' style='background-image:url("https://share.ftabt.cn/KingAnswer/Public/img/index/msy-pic.png")'>
+            
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='content-bottom'></view>
+  </view>
+</view>
+
+  
+
+
